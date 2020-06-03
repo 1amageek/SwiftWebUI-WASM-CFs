@@ -6,6 +6,8 @@ https://github.com/carson-katri/SwiftWebUI
 
 https://github.com/swiftwasm/swift
 
+https://github.com/kateinoigakukun/JavaScriptKit
+
 
 ## Deploy
 
