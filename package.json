@@ -1,0 +1,36 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "tslint --project functions/tsconfig.json",
+    "build": "tsc --project functions",
+    "build:app": "webpack",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions,hosting",
+    "logs": "firebase functions:log",
+    "copy-wasm": "cpx ./wasm/* ./functions/lib/wasm -C"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "main": "./functions/lib/index.js",
+  "dependencies": {
+    "@wasmer/wasi": "^0.9.1",
+    "@wasmer/wasmfs": "^0.9.1",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.1",
+    "javascript-kit-swift": "^0.3.0",
+    "pako": "^1.0.11"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "firebase-functions-test": "^0.2.0",
+    "tslint": "^5.12.0",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "private": true
+}
