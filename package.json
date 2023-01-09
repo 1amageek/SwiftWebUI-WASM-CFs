@@ -19,7 +19,7 @@
     "@wasmer/wasi": "^0.9.1",
     "@wasmer/wasmfs": "^0.9.1",
     "express": "^4.17.1",
-    "firebase-admin": "^8.10.0",
+    "firebase-admin": "^11.4.1",
     "firebase-functions": "^3.6.1",
     "javascript-kit-swift": "^0.3.0",
     "pako": "^1.0.11"
